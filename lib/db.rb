@@ -1,6 +1,6 @@
 require 'sequel'
 
-DB = Sequel.connect 'sqlite://wind.db'
+DB = Sequel.connect DATABASE
 
 Sequel::Model.plugin :schema
 

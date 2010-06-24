@@ -1,0 +1,37 @@
+WIND: A simple way to think
+===========================
+
+Wind is a blog engine.
+And it's simple, realy simple.
+
+HTML 5 is pretty, and Wind was developed with this!
+Done for the future! Until 2012, at least.
+
+Why simple? Becouse you don't need a lot of stuffs just to write.
+Or do you think that Bible was written with a powerfull word processor?
+Powerfull inspiration, ok, but with simple tools.
+
+1 - How it works?
+=================
+
+Download the source code and install the required gems:
+
+    sudo gem install sinatra
+    sudo gem install sinatra-flash
+    sudo gem install RedCloth
+
+Ok, now is just run the server:
+
+    ruby app.rb
+
+Open your favorite browser, access:
+
+    http://localhost:4567
+
+Ok... login, think and write!
+The default code to login is "admin".
+
+2 - Config
+==========
+
+All (few) configurations can be made in config.rb file.
