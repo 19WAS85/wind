@@ -1,0 +1,16 @@
+<% @posts.each do |post| %>
+    <article>
+        <section class="text">
+            <header>
+                <h1><%= post.title %></h1>
+                <time datetime="<%= post.date.iso8601 %>"><%= date post.date %></time>
+            </header>
+            <%= textile post.text %>
+        </section>
+        <% if logged? %>
+            <section class="admin">
+                <a href="/post/<%= post.id %>">Edit</a>
+            </section>
+        <% end %>
+    </article>
+<% end %>

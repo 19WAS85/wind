@@ -1,0 +1,14 @@
+<form id="post" method="post" action="/post">
+    <input type="hidden" name="id" value="<%= @post.id %>" />
+    <div>
+        <input type="text" name="title" value="<%= @post.title %>" />
+    </div>
+    <div>
+        <textarea name="text" rows="20" cols="40"><%= @post.text %></textarea>
+    </div>
+    <button type="submit">Save</button>
+</form>
+<form id="delete" method="post" action="/post/<%= @post.id %>">
+    <input type="hidden" name="_method" value="delete" />
+    <button type="submit">Delete</button>
+</form>

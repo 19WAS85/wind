@@ -1,0 +1,87 @@
+* { margin: 0; padding: 0; font-size: 1em; list-style-position: inside; }
+
+#content {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  float: left;
+  width: 800px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 22pt;
+}
+
+header h2 {
+  font-size: 12pt;
+}
+
+#main {
+  float: left;
+  width: 560px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+article header h1 {
+  font-size: 14pt;
+}
+
+article header time {
+  font-size: 10pt;
+}
+
+article p, article pre, article ul, article blockquote {
+  margin-bottom: 15px;
+}
+
+article ul, article pre, article blockquote {
+  margin-left: 30px
+}
+
+nav {
+  float: right;
+  width: 200px;
+}
+
+nav section {
+  margin-bottom: 20px;
+}
+
+nav section h1 {
+  margin-bottom: 10px;
+}
+
+input, textarea, button {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 3px 1px 3px 3px;
+}
+
+textarea, button {
+  padding: 3px;
+}
+
+#main input, #main textarea {
+  width: 560px;
+}
+
+footer {
+  float: left;
+  width: 800px;
+  padding: 20px 0;
+  text-align: center;
+}
