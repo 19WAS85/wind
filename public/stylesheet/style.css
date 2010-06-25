@@ -71,8 +71,12 @@ input {
   padding: 3px 1px 3px 3px;
 }
 
-textarea, button {
-  padding: 3px;
+textarea {
+  padding: 5px;
+}
+
+button {
+  -webkit-appearance: push-button;
 }
 
 #main input, #main textarea {

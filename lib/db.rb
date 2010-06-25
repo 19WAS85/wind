@@ -12,4 +12,13 @@ class Post < Sequel::Model
     datetime :date
   end
   create_table unless table_exists?
+  
+  def self.ordered
+    filter.order(:date.desc)
+  end
+  
+  def self.search(q)
+    value = "%#{q}%"
+    filter(:title.like(value) | :text.like(value)).order(:date.desc)
+  end
 end

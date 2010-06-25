@@ -12,7 +12,12 @@ helpers do
 end
 
 get '/' do
-  @posts = Post.filter.order(:date.desc)
+  @posts = Post.ordered
+  erb :index
+end
+
+get '/search' do
+  @posts = Post.search params[:q]
   erb :index
 end
 
