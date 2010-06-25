@@ -56,11 +56,15 @@ nav {
 }
 
 nav section {
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 nav section h1 {
   margin-bottom: 10px;
+}
+
+nav .widget {
+  margin-bottom: 20px;
 }
 
 input, textarea, button {

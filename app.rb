@@ -11,6 +11,10 @@ helpers do
   require 'lib/helpers'
 end
 
+before do
+  @widgets = Widget.all
+end
+
 get '/' do
   @posts = Post.ordered
   erb :index
@@ -70,6 +74,37 @@ end
 delete '/post/:id' do
   if_logged do
     Post[params[:id]].delete
+    go_home
+  end
+end
+
+get '/widget/new' do
+  if_logged do
+    @widget = Widget.new
+    erb :widget
+  end
+end
+
+post '/widget' do
+  if_logged do
+    widget = Widget[params[:id]] || Widget.new
+    widget.title = params[:title]
+    widget.content = params[:content]
+    widget.save
+    go_home
+  end
+end
+
+get '/widget/:id' do
+  if_logged do
+    @widget = Widget[params[:id]]
+    erb :widget
+  end
+end
+
+delete '/widget/:id' do
+  if_logged do
+    Widget[params[:id]].delete
     go_home
   end
 end

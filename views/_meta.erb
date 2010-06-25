@@ -3,12 +3,28 @@
         <h1>Admin</h1>
         <ul>
             <li><a href="/post/new">New post</a></li>
+            <li><a href="/widget/new">New widget</a></li>
             <li><a href="/logout">Logout</a></li>
         </ul>
     </section>
 <% end %>
-<section>
+<section id="search">
     <form action="/search" method="get" accept-charset="utf-8">
         <input type="search" name="q" placeholder="Search" value="<%= params[:q] %>" />
     </form>
+</section>
+<section id="widgets">
+    <% @widgets.each do |widget| %>
+        <div class="widget">
+            <h1><%= widget.title %></h1>
+            <div class="content">
+                <%= widget.content %>
+            </div>
+            <% if logged? %>
+                <section class="admin">
+                    <a href="/widget/<%= widget.id %>">Edit</a>
+                </section>
+            <% end %>
+        </div>
+    <% end %>
 </section>
