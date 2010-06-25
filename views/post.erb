@@ -8,7 +8,9 @@
     </div>
     <button type="submit">Save</button>
 </form>
-<form id="delete" method="post" action="/post/<%= @post.id %>">
-    <input type="hidden" name="_method" value="delete" />
-    <button type="submit">Delete</button>
-</form>
+<% if @post.id %>
+    <form id="delete" method="post" action="/post/<%= @post.id %>">
+        <input type="hidden" name="_method" value="delete" />
+        <button type="submit">Delete</button>
+    </form>
+<% end %>
