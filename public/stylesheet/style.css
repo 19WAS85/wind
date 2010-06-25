@@ -71,7 +71,7 @@ input {
   padding: 3px 1px 3px 3px;
 }
 
-textarea {
+textarea, button {
   padding: 3px;
 }
 
@@ -81,6 +81,10 @@ button {
 
 #main input, #main textarea {
   width: 560px;
+}
+
+#post p {
+  margin: 0 0 15px 0;
 }
 
 footer {
