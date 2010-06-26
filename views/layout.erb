@@ -2,14 +2,14 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title><%= BLOG[:name] %> &#8212; <%= BLOG[:title] %></title>
+        <title><%= $blog.name %> &#8212; <%= $blog.title %></title>
         <link rel="stylesheet" href="/stylesheet/style.css" type="text/css" media="screen" />
     </head>
     <body>
         <section id="content">
             <header>
-                <h1><a href="/"><%= BLOG[:name] %></a></h1>
-                <h2><%= BLOG[:title] %></h2>
+                <h1><a href="/"><%= $blog.name %></a></h1>
+                <h2><%= $blog.title %></h2>
             </header>
             <%= styled_flash %>
             <section id="main">
@@ -19,7 +19,7 @@
                 <%= partial :meta %>
             </nav>
             <footer>
-                &copy;<%= today.year %> <%= BLOG[:name] %>
+                &copy;<%= today.year %> <%= $blog.name %>
                 <% unless logged? %>
                     &#8212; <a href="/login">login</a>
                 <% end %>

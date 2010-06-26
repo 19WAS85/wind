@@ -99,3 +99,24 @@ delete '/widget/:id' do
     go_home
   end
 end
+
+get '/settings' do
+  if_logged do
+    erb :settings
+  end
+end
+
+post '/settings' do
+  if_logged do
+    if auth? params[:code]
+      $blog.name = params[:name]
+      $blog.title = params[:title]
+      $blog.code = params[:new_code] unless params[:new_code].empty?
+      $blog.save
+      go_home
+    else
+      notice 'Ops! Wrong credentials.'
+      erb :settings
+    end
+  end
+end

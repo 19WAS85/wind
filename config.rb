@@ -1,12 +1,5 @@
 require 'sequel'
 
-# Blog configurations.
-BLOG = {
-  :name => 'Wind',
-  :title => 'A simple way to think',
-  :code => 'admin'
-}
-
 # Database connection.
 DB = Sequel.connect 'sqlite://wind.db'
 
@@ -25,3 +18,6 @@ end
 helpers do
   Dir['helpers/*.rb'].each { |helper| require helper }
 end
+
+# Blog configurations.
+$blog = Setting.from_database

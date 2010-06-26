@@ -14,7 +14,7 @@ def notice(text)
 end
 
 def auth?(code)
-  code == BLOG[:code]
+  code == $blog.code
 end
 
 def login(log = true)

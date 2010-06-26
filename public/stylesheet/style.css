@@ -97,6 +97,10 @@ button {
   margin: 0 0 15px 0;
 }
 
+#flash {
+  margin: 20px 0;
+}
+
 footer {
   float: left;
   width: 800px;

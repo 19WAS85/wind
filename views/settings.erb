@@ -1,0 +1,22 @@
+<section class="admin">
+    <h1>Settings</h1>
+    <form action="/settings" method="post">
+        <div>
+            <label>Blog name</label>
+            <input type="text" name="name" value="<%= $blog.name %>" autofocus />
+        </div>
+        <div>
+            <label>Title</label>
+            <input type="text" name="title" value="<%= $blog.title %>" />
+        </div>
+        <div>
+            <label>Admin code</label>
+            <input type="password" name="code" />
+        </div>
+        <div>
+            <label>New code (fill to change)</label>
+            <input type="password" name="new_code" />
+        </div>
+        <button type="submit">Save</button>
+    </form>
+</section>
