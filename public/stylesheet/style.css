@@ -35,8 +35,18 @@ article header {
 }
 
 article header h1 {
-  font-size: 14pt;
+  font-size: 16pt;
   margin-bottom: 0;
+}
+
+article h2 {
+  font-size: 14pt;
+  margin: 30px 0 15px;
+}
+
+article h3, article h4, article h5, article h6 {
+  font-size: 12pt;
+  margin: 30px 0 15px;
 }
 
 article header time {
