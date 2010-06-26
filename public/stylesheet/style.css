@@ -74,6 +74,10 @@ nav section h1 {
   margin-bottom: 10px;
 }
 
+nav ul {
+  margin-left: 10px;
+}
+
 nav .widget {
   margin: 20px 0;
 }

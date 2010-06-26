@@ -3,7 +3,7 @@
         <section class="text">
             <header>
                 <h1><%= post.title %><%= edit_link 'post', post.id %></h1>
-                <time datetime="<%= post.date.iso8601 %>"><%= date post.date %></time>
+                <time datetime="<%= universal post.date %>"><%= date post.date %></time>
             </header>
             <%= textile post.text %>
         </section>

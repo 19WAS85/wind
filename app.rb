@@ -16,6 +16,11 @@ get '/search' do
   erb :index
 end
 
+get '/feed' do
+  @posts = Post.ordered
+  erb :feed, :layout => false
+end
+
 get '/login' do
   erb :login
 end

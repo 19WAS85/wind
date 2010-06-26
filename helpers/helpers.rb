@@ -41,9 +41,25 @@ def today
 end
 
 def date(the_date)
-  the_date.strftime('%Y-%m-%d')
+  the_date.strftime '%Y-%m-%d'
+end
+
+def universal(date)
+  date.rfc822
 end
 
 def edit_link(path, id)
   " (<a href='/#{path}/#{id}' class='edit'>Edit</a>)" if logged?
+end
+
+def env
+  request['ENV']
+end
+
+def host
+  "http://#{env['HTTP_HOST']}"
+end
+
+def path
+  "#{host}#{env['REQUEST_PATH']}"
 end
