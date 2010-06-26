@@ -1,16 +1,19 @@
-<form method="post" action="/widget">
-    <input type="hidden" name="id" value="<%= @widget.id %>" />
-    <div>
-        <input type="text" name="title" placeholder="Title" value="<%= @widget.title %>" />
-    </div>
-    <div>
-        <textarea name="content" rows="20" cols="40" placeholder="HTML content..."><%= @widget.content %></textarea>
-    </div>
-    <button type="submit">Save</button>
-</form>
-<% if @widget.id %>
-    <form id="delete" method="post" action="/widget/<%= @widget.id %>">
-        <input type="hidden" name="_method" value="delete" />
-        <button type="submit">Delete</button>
+<section class="admin">
+    <h1>Widget</h1>
+    <form method="post" action="/widget">
+        <input type="hidden" name="id" value="<%= @widget.id %>" />
+        <div>
+            <input type="text" name="title" placeholder="Title" value="<%= @widget.title %>" />
+        </div>
+        <div>
+            <textarea name="content" rows="20" cols="40" placeholder="HTML content..."><%= @widget.content %></textarea>
+        </div>
+        <button type="submit">Save</button>
     </form>
-<% end %>
+    <% if @widget.id %>
+        <form id="delete" method="post" action="/widget/<%= @widget.id %>">
+            <input type="hidden" name="_method" value="delete" />
+            <button type="submit">Delete</button>
+        </form>
+    <% end %>
+</section>
