@@ -16,15 +16,10 @@
 <section id="widgets">
     <% @widgets.each do |widget| %>
         <div class="widget">
-            <h1><%= widget.title %></h1>
+            <h1><%= widget.title %><%= edit_link 'widget', widget.id %></h1>
             <div class="content">
                 <%= widget.content %>
             </div>
-            <% if logged? %>
-                <section class="admin">
-                    <a href="/widget/<%= widget.id %>">Edit</a>
-                </section>
-            <% end %>
         </div>
     <% end %>
 </section>

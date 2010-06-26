@@ -44,3 +44,7 @@ end
 def date(the_date)
   the_date.strftime('%Y-%m-%d')
 end
+
+def edit_link(path, id)
+  " (<a href='/#{path}/#{id}' class='edit'>Edit</a>)" if logged?
+end
