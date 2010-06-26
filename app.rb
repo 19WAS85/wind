@@ -1,15 +1,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'config'
-require 'lib/db'
-
-configure do
-  enable :sessions
-end
-
-helpers do
-  require 'lib/helpers'
-end
 
 before do
   @widgets = Widget.all

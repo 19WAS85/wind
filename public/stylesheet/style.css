@@ -56,7 +56,7 @@ nav {
 }
 
 nav section {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 nav section h1 {
@@ -64,7 +64,7 @@ nav section h1 {
 }
 
 nav .widget {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 input, textarea, button {
