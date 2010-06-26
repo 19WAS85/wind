@@ -25,7 +25,7 @@ post '/login' do
     login
     go_home
   else
-    notice 'Invalid credentials!'
+    message 'Ops! Wrong code.'
     erb :login
   end
 end
@@ -115,7 +115,7 @@ post '/settings' do
       $blog.save
       go_home
     else
-      notice 'Ops! Wrong credentials.'
+      message 'Ops! Wrong code.'
       erb :settings
     end
   end

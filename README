@@ -17,7 +17,7 @@ Powerfull inspiration, ok, but with simple tools.
 Download the source code and install the required gems:
 
     sudo gem install sinatra
-    sudo gem install sinatra-flash
+    sudo gem install sequel
     sudo gem install RedCloth
 
 Ok, now is just run the server:

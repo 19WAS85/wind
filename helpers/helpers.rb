@@ -1,4 +1,3 @@
-require 'sinatra/flash'
 require 'RedCloth'
 
 def partial(view)
@@ -9,8 +8,8 @@ def go_home
   redirect '/'
 end
 
-def notice(text)
-  flash[:notice] = text
+def message(text)
+  @message = text
 end
 
 def auth?(code)

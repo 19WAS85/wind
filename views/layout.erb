@@ -11,7 +11,9 @@
                 <h1><a href="/"><%= $blog.name %></a></h1>
                 <h2><%= $blog.title %></h2>
             </header>
-            <%= styled_flash %>
+            <% if @message %>
+                <section id="message"><%= @message %></section>
+            <% end %>
             <section id="main">
                 <%= yield %>
             </section>
