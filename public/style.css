@@ -22,7 +22,7 @@ header h2 {
 
 #main {
   float: left;
-  width: 560px;
+  width: 530px;
 }
 
 article {
@@ -63,7 +63,7 @@ article ul, article pre, article blockquote {
 
 nav {
   float: right;
-  width: 200px;
+  width: 250px;
 }
 
 nav section {
@@ -75,7 +75,7 @@ nav section h1 {
 }
 
 nav ul {
-;
+  margin-left: 10px;
 }
 
 nav .widget {
@@ -99,7 +99,7 @@ button {
 }
 
 #main input, #main textarea {
-  width: 560px;
+  width: 530px;
 }
 
 #main .admin h1 {
