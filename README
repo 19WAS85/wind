@@ -11,8 +11,26 @@ Why simple? Because you don't need a extravaganza just to write.
 Or do you think that Bible was written with a powerfull word processor?
 Powerfull inspiration, ok, but with simple tools.
 
-1 - How it works?
-=================
+1 - Features
+------------
+
+Few features, but the engine is in constant development.
+Nevertheless, Wind dont want a lot of stuffs and tools, it's made to be simple.
+
+The basic features are:
+    
+    - Semantic HTML 5. This is a important feature to internet future.
+    - Feed RSS. Basic in a blog.
+    - HTML widgets. To create menus, texts, twitter widget, flicker or what you has in your mind.
+    - Textile text formatting. To do a easy, beauty and semantic text formatting.
+    - We forgot a important feature? Suggest!
+
+New features, future features and suggest features:
+
+    http://github.com/wagnerandrade/wind/issues
+
+2 - How it works?
+-----------------
 
 Download the source code and install the required gems:
 
@@ -31,7 +49,8 @@ Open your favorite browser, access:
 Ok... login, think and write!
 The default code to login is "admin".
 
-2 - Config
-==========
+3 - Config & Settings
+---------------------
 
 All (few) configurations can be made in config.rb file.
+Blog settings (name, code...) could be edited in settings page.
