@@ -3,10 +3,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title><%= $blog.name %> &#8212; <%= $blog.title %></title>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <meta name="Description" content="<%= $blog.title %>">
+        <meta name="generator" content="Wind [http://github.com/wagnerandrade/wind]" />
+        <link rel="alternate" type="application/rss+xml" title="<%= $blog.name %> RSS Feed" href="/feed" />
+        <link rel="index" title="<%= $blog.name %>" href="/" />
         <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
     </head>
     <body>
-        <section id="content">
+        <div id="content">
             <header>
                 <h1><a href="/"><%= $blog.name %></a></h1>
                 <h2><%= $blog.title %></h2>
@@ -22,10 +27,8 @@
             </nav>
             <footer>
                 &copy;<%= today.year %> <%= $blog.name %>
-                <% unless logged? %>
-                    &#8212; <a href="/login">login</a>
-                <% end %>
+                &#8212; Powered by <a href="http://github.com/wagnerandrade/wind">Wind</a>
             </footer>
-        </section>
+        </div>
     </body>
 </html>

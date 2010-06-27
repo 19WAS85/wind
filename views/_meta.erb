@@ -5,7 +5,6 @@
             <li><a href="/post/new">New post</a></li>
             <li><a href="/widget/new">New widget</a></li>
             <li><a href="/settings">Blog settings</a></li>
-            <li><a href="/logout">Logout</a></li>
         </ul>
     </section>
 <% end %>
@@ -28,4 +27,13 @@
             </div>
         </div>
     <% end %>
+</section>
+<section id="login">
+    <ul>
+        <% if logged? %>
+            <li><a href="/logout">Logout</a></li>
+        <% else %>
+            <li><a href="/login">Login</a></li>
+        <% end %>
+    </ul>
 </section>
