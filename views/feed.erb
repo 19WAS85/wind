@@ -8,7 +8,7 @@
       <% @posts.each do |post| %>
           <item>
              <title><%= post.title %></title>
-             <link><%= path %></link>
+             <link><%= host %></link>
              <description><%= textile post.text %></description>
              <pubDate><%= universal post.date %></pubDate>
              <guid><%= universal @posts.first.date %></guid>
