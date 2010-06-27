@@ -7,7 +7,14 @@ class Post < Sequel::Model
     datetime :date
   end
   
-  create_table unless table_exists?
+  unless table_exists?
+    create_table
+    create(
+      :title => 'Welcome!',
+      :text => File.open('README.textile', 'r') { |file| file.read },
+      :date => Time.now
+    )
+  end
   
   def self.ordered
     filter.order(:date.desc)
