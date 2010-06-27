@@ -16,7 +16,7 @@ end
 
 # Application helpers.
 helpers do
-  Dir['helpers/*.rb'].each { |helper| require helper }
+  require 'helpers'
 end
 
 # Blog configurations.
