@@ -20,4 +20,4 @@ helpers do
 end
 
 # Blog configurations.
-$blog = Setting.from_database
+$settings = Setting.from_database

@@ -115,10 +115,10 @@ end
 post '/settings' do
   if_logged do
     if auth? params[:code]
-      $blog.name = params[:name]
-      $blog.title = params[:title]
-      $blog.code = params[:new_code] unless params[:new_code].empty?
-      $blog.save
+      $settings.name = params[:name]
+      $settings.title = params[:title]
+      $settings.code = params[:new_code] unless params[:new_code].empty?
+      $settings.save
       go_home
     else
       message 'Ops! Wrong code.'

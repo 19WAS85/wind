@@ -13,7 +13,7 @@ def message(text)
 end
 
 def auth?(code)
-  code == $blog.code
+  code == $settings.code
 end
 
 def login(log = true)
