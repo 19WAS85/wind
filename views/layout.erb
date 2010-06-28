@@ -5,8 +5,8 @@
         <title><%= $settings.name %> &#8212; <%= $settings.title %></title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="Description" content="<%= $settings.title %>">
-        <meta name="generator" content="Wind [http://github.com/wagnerandrade/wind]" />
-        <link rel="alternate" type="application/rss+xml" title="<%= $settings.name %> RSS Feed" href="/feed" />
+        <meta name="generator" content="Wind [<%= wind_link %>]" />
+        <link rel="alternate" type="application/rss+xml" title="<%= $settings.name %> RSS Feed" href="<%= feed_url %>" />
         <link rel="index" title="<%= $settings.name %>" href="/" />
         <link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
     </head>
@@ -27,7 +27,7 @@
             </nav>
             <footer>
                 &copy;<%= today.year %> <%= $settings.name %>
-                &#8212; Powered by <a href="http://github.com/wagnerandrade/wind">Wind</a>
+                &#8212; Powered by <a href="<%= wind_link %>">Wind</a>
             </footer>
         </div>
     </body>

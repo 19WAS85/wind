@@ -4,7 +4,7 @@
       <link><%= host %></link>
       <description><%= $settings.title %></description>
       <lastBuildDate><%= universal @posts.first.date %></lastBuildDate>
-      <generator>Wind [http://github.com/wagnerandrade/wind]</generator>
+      <generator>Wind [<%= wind_link %>]</generator>
       <% @posts.each do |post| %>
           <item>
              <title><%= post.title %></title>

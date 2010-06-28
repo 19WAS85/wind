@@ -5,6 +5,7 @@ class Setting < Sequel::Model
     varchar :name
     varchar :title
     varchar :code
+    varchar :feed
   end
   
   unless table_exists?

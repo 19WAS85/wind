@@ -82,6 +82,10 @@ nav .widget {
   margin: 20px 0;
 }
 
+label {
+  font-size: 10pt;
+}
+
 input, textarea, button {
   margin-bottom: 10px;
 }
@@ -105,6 +109,10 @@ button {
 #main .admin h1 {
   font-size: 14pt;
   margin-bottom: 15px;
+}
+
+#main .admin h2 {
+  margin-top: 20px;
 }
 
 #post p {

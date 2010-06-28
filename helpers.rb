@@ -67,3 +67,11 @@ end
 def edit_link(path, id)
   " <a class='edit' href='/#{path}/#{id}'>[Edit]</a>" if logged?
 end
+
+def feed_url
+  $settings.feed || '/feed'
+end
+
+def wind_link
+  'http://github.com/wagnerandrade/wind'
+end

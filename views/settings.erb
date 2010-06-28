@@ -10,12 +10,16 @@
             <input type="text" name="title" value="<%= $settings.title %>" />
         </div>
         <div>
-            <label>Admin code</label>
-            <input type="password" name="code" />
+            <label>Feed Url (to services like FeedBurner)</label>
+            <input type="text" name="feed" value="<%= $settings.feed %>" />
         </div>
         <div>
-            <label>New code (fill to change)</label>
+            <label>Change Admin code (fill to change)</label>
             <input type="password" name="new_code" />
+        </div>
+        <h2>Put your admin code to save</h2>
+        <div>
+            <input type="password" name="code" />
         </div>
         <button type="submit">Save</button>
     </form>

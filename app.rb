@@ -118,6 +118,7 @@ post '/settings' do
       $settings.name = params[:name]
       $settings.title = params[:title]
       $settings.code = params[:new_code] unless params[:new_code].empty?
+      $settings.feed = params[:feed]
       $settings.save
       go_home
     else
