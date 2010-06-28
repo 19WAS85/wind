@@ -115,6 +115,11 @@ button {
   margin: 20px 0;
 }
 
+span.edit {
+  margin-left: 10px;
+  font-size: 10pt;
+}
+
 footer {
   float: left;
   width: 800px;
