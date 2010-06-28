@@ -65,5 +65,5 @@ def universal(date)
 end
 
 def edit_link(path, id)
-  " <span class='edit'><a href='/#{path}/#{id}'>[Edit]</a></span>" if logged?
+  " <a class='edit' href='/#{path}/#{id}'>[Edit]</a>" if logged?
 end

@@ -115,7 +115,7 @@ button {
   margin: 20px 0;
 }
 
-span.edit {
+a.edit {
   margin-left: 10px;
   font-size: 10pt;
 }
