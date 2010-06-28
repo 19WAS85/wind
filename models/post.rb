@@ -5,6 +5,7 @@ class Post < Sequel::Model
     varchar :title
     varchar :text
     datetime :date
+    varchar :link
   end
   
   unless table_exists?
@@ -12,7 +13,8 @@ class Post < Sequel::Model
     create(
       :title => 'Welcome!',
       :text => File.open('README.textile', 'r') { |file| file.read },
-      :date => Time.now
+      :date => Time.now,
+      :link => 'welcome'
     )
   end
   
@@ -23,6 +25,10 @@ class Post < Sequel::Model
   def self.search(q)
     value = "%#{q}%"
     filter(:title.like(value) | :text.like(value)).order(:date.desc)
+  end
+  
+  def self.with_link(value)
+    filter(:link => value).order(:date.desc)
   end
   
 end

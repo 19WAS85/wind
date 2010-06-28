@@ -55,6 +55,7 @@ post '/post' do
     post.title = params[:title]
     post.text = params[:text]
     post.date = Time.now unless post.id
+    post.link = to_link params[:title]
     post.save
     go_home
   end
@@ -124,4 +125,9 @@ post '/settings' do
       erb :settings
     end
   end
+end
+
+get '/:link' do
+  @posts = Post.with_link params[:link]
+  erb :index
 end

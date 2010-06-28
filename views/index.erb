@@ -2,7 +2,10 @@
     <article>
         <section class="text">
             <header>
-                <h1><%= post.title %><%= edit_link 'post', post.id %></h1>
+                <h1>
+                    <a href="/<%= post.link %>"><%= post.title %></a>
+                    <%= edit_link 'post', post.id %>
+                </h1>
                 <time datetime="<%= universal post.date %>"><%= date post.date %></time>
             </header>
             <%= textile post.text %>

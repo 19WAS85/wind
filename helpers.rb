@@ -32,6 +32,22 @@ def if_logged
   end
 end
 
+def env
+  request['ENV']
+end
+
+def host
+  "http://#{env['HTTP_HOST']}"
+end
+
+def path
+  "#{host}#{env['REQUEST_PATH']}"
+end
+
+def to_link(title)
+  title.gsub(' ', '-').downcase
+end
+
 def textile(text)
   RedCloth.new(text).to_html
 end
@@ -50,16 +66,4 @@ end
 
 def edit_link(path, id)
   " (<a href='/#{path}/#{id}' class='edit'>Edit</a>)" if logged?
-end
-
-def env
-  request['ENV']
-end
-
-def host
-  "http://#{env['HTTP_HOST']}"
-end
-
-def path
-  "#{host}#{env['REQUEST_PATH']}"
 end
