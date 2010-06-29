@@ -60,10 +60,6 @@ def date(the_date)
   the_date.strftime '%Y-%m-%d'
 end
 
-def universal(date)
-  date.rfc822
-end
-
 def edit_link(path, id)
   " <a class='edit' href='/#{path}/#{id}'>[Edit]</a>" if logged?
 end

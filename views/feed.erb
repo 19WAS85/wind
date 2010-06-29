@@ -3,7 +3,7 @@
       <title><%= $settings.name %></title>
       <link><%= host %></link>
       <description><%= $settings.title %></description>
-      <lastBuildDate><%= universal @posts.first.date %></lastBuildDate>
+      <lastBuildDate><%= @posts.first.date.rfc822 %></lastBuildDate>
       <generator>Wind [<%= wind_link %>]</generator>
       <% @posts.each do |post| %>
           <item>
