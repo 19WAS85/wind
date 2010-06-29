@@ -80,3 +80,11 @@ end
 def wind_link
   'http://github.com/wagnerandrade/wind'
 end
+
+def style
+  if File.exist? 'public/custom/style.css'
+    '/custom/style.css'
+  else
+    '/style.css'
+  end
+end
