@@ -69,7 +69,12 @@ def edit_link(path, id)
 end
 
 def feed_url
-  $settings.feed || '/feed'
+  feed = $settings.feed
+  if feed.nil? or feed.empty?
+    '/feed'
+  else
+    feed
+  end
 end
 
 def wind_link
