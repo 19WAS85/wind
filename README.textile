@@ -18,6 +18,7 @@ The basic features are:
 * Feed RSS. Basic in a blog.
 * HTML widgets. To create menus, texts, twitter widget, flicker or what you has in your mind.
 * Textile text formatting. To do a easy, beauty and semantic text formatting.
+* Database-agnostic-independent-cool. You can use your prefered database.
 * We forgot a important feature? Suggest!
 
 New features, future features and suggest features:
@@ -26,10 +27,11 @@ bq. "http://github.com/wagnerandrade/wind/issues":http://github.com/wagnerandrad
 
 h3. 2 - How it works?
 
-Download the source code and install the required gems:
+Download the source code and install the required gems (to sqlite database):
 
 <pre>
 sudo gem install sinatra
+sudo gem install sqlite3-ruby
 sudo gem install sequel
 sudo gem install RedCloth
 </pre>
