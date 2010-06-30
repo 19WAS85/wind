@@ -1,14 +1,12 @@
 <% @posts.each do |post| %>
     <article>
-        <section class="text">
-            <header>
-                <h1>
-                    <a href="/<%= post.link %>"><%= post.title %></a>
-                    <%= edit_link 'post', post.id %>
-                </h1>
-                <time datetime="<%= post.date.iso8601 %>"><%= date post.date %></time>
-            </header>
-            <%= textile post.text %>
-        </section>
+            <h1>
+                <a href="/<%= post.link %>"><%= post.title %></a>
+                <%= edit_link 'post', post.id %>
+            </h1>
+            <time datetime="<%= post.date.iso8601 %>"><%= date post.date %></time>
+            <section class="text">
+                <%= textile post.text %>
+            </section>
     </article>
 <% end %>
