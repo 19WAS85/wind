@@ -10,8 +10,8 @@
              <title><%= post.title %></title>
              <link><%= "#{host}/#{post.link}" %></link>
              <description><%= textile post.text %></description>
-             <pubDate><%= universal post.date %></pubDate>
-             <guid><%= universal @posts.first.date %></guid>
+             <pubDate><%= post.date.rfc822 %></pubDate>
+             <guid><%= post.date.rfc822 %></guid>
           </item>
       <% end %>
    </channel>
