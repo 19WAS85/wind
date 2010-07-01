@@ -60,24 +60,24 @@ article ul, article pre, article blockquote {
   margin-left: 30px
 }
 
-nav {
+aside {
   float: right;
   width: 250px;
 }
 
-nav section {
+aside section {
   margin: 20px 0;
 }
 
-nav section h1 {
+aside section h1 {
   margin-bottom: 10px;
 }
 
-nav ul {
+aside ul {
   margin-left: 10px;
 }
 
-nav .widget {
+aside .widget {
   margin: 20px 0;
 }
 
