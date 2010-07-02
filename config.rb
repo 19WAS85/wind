@@ -1,5 +1,7 @@
 require 'sequel'
 
+Dir['plugins/*.rb'].each { |plugin| require plugin }  
+
 # Database connection.
 DB = Sequel.connect 'sqlite://wind.db'
 
