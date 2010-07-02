@@ -19,7 +19,7 @@ end
 get '/feed' do
   @posts = Post.ordered
   content_type 'xml'
-  erb :feed, :layout => false
+  feed @posts
 end
 
 get '/login' do

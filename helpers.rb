@@ -84,3 +84,25 @@ def style
     '/style.css'
   end
 end
+
+def feed(posts)
+  builder do |xml|
+    xml.instruct! :xml, :version => '1.0'
+    xml.rss :version => "2.0" do
+      xml.channel do
+        xml.title $settings.name
+        xml.description $settings.title
+        xml.link host
+        posts.each do |post|
+          xml.item do
+            xml.title post.title
+            xml.link "#{host}/#{post.link}"
+            xml.description textile(post.text)
+            xml.pubDate post.date.rfc822()
+            xml.guid "#{host}/#{post.id}"
+          end
+        end
+      end
+    end
+  end
+end
