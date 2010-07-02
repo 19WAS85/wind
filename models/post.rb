@@ -18,6 +18,8 @@ class Post < Sequel::Model
     )
   end
   
+  sync
+  
   def self.ordered
     filter.order(:date.desc)
   end

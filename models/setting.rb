@@ -17,6 +17,8 @@ class Setting < Sequel::Model
     )
   end
   
+  sync
+  
   def self.from_database
     filter.first
   end

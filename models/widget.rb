@@ -6,6 +6,8 @@ class Widget < Sequel::Model
     varchar :content
   end
   
-  create_table unless table_exists?
+  create_table?
+  
+  sync
   
 end
