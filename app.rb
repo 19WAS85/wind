@@ -121,6 +121,7 @@ post '/settings' do
       $settings.title = params[:title]
       $settings.code = params[:new_code] unless params[:new_code].empty?
       $settings.feed = params[:feed]
+      $settings.footer = params[:footer]
       $settings.save
       go_home
     else
@@ -132,5 +133,6 @@ end
 
 get '/:link' do
   @posts = Post.with_link params[:link]
+  @footer = $settings.footer
   erb :index
 end

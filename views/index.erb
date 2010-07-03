@@ -8,5 +8,8 @@
             <section class="text">
                 <%= textile post.text %>
             </section>
+            <% if @footer and not @footer.empty? %>
+                <section class="footer"><%= @footer %></section>
+            <% end %>
     </article>
 <% end %>
