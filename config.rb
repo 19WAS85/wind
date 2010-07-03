@@ -26,4 +26,4 @@ end
 $settings = Setting.from_database
 
 # Posts per page
-PAGE_SIZE = 3
+PAGE_SIZE = 10
