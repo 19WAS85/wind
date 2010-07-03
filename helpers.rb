@@ -111,7 +111,7 @@ def feed(posts)
             xml.link "#{host}/#{post.link}"
             xml.description textile(post.text)
             xml.pubDate post.date.rfc822()
-            xml.guid "#{host}/#{post.id}"
+            xml.guid "#{host}/#{post.link}"
           end
         end
       end
