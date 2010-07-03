@@ -62,8 +62,10 @@ post '/post' do
     post = Post[params[:id]] || Post.new
     post.title = params[:title]
     post.text = params[:text]
-    post.date = Time.now unless post.id
-    post.link = to_link params[:title]
+    unless post.id
+      post.date = Time.now
+      post.link = to_link params[:title]
+    end
     post.save
     go_home
   end

@@ -45,7 +45,7 @@ def path
 end
 
 def to_link(title)
-  title.gsub(' ', '-').downcase
+  title.gsub(' ', '-').urlize
 end
 
 def textile(text)
