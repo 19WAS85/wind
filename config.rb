@@ -1,4 +1,5 @@
 require 'sequel'
+require 'sequel/extensions/pagination'
 
 Dir['plugins/*.rb'].each { |plugin| require plugin }  
 
@@ -23,3 +24,6 @@ end
 
 # Blog configurations.
 $settings = Setting.from_database
+
+# Posts per page
+PAGE_SIZE = 3

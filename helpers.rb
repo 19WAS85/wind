@@ -64,6 +64,18 @@ def edit_link(path, id)
   " <a class='edit' href='/#{path}/#{id}'>[Edit]</a>" if logged?
 end
 
+def next_page
+  count = Post.count
+  if params[:page]
+    page = params[:page].to_i
+    if count > page * PAGE_SIZE
+      page + 1
+    end
+  elsif count > PAGE_SIZE
+    2
+  end
+end
+
 def feed_url
   feed = $settings.feed
   if feed.nil? or feed.empty?

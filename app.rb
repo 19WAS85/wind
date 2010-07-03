@@ -8,6 +8,13 @@ end
 
 get '/' do
   @posts = Post.ordered
+  @next_page = next_page
+  erb :index
+end
+
+get '/page/:page' do
+  @posts = Post.ordered params[:page]
+  @next_page = next_page
   erb :index
 end
 

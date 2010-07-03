@@ -13,3 +13,8 @@
             <% end %>
     </article>
 <% end %>
+<% if @next_page %>
+    <section id="paging">
+        <a href="/page/<%= @next_page %>">Next page →</a>
+    </section>
+<% end %>

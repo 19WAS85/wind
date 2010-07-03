@@ -20,8 +20,8 @@ class Post < Sequel::Model
   
   sync
   
-  def self.ordered
-    filter.order(:date.desc)
+  def self.ordered(page = 1)
+    filter.order(:date.desc).paginate(page.to_i, PAGE_SIZE)
   end
   
   def self.search(q)
