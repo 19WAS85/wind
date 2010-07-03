@@ -85,8 +85,12 @@ label {
   font-size: 10pt;
 }
 
-input, textarea, button {
+input, textarea {
   margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
 }
 
 input {

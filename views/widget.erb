@@ -8,6 +8,10 @@
         <div>
             <textarea name="content" rows="20" cols="40" placeholder="HTML content..."><%= @widget.content %></textarea>
         </div>
+        <div>
+            <label>Order</label>
+            <input type="number" name="order" value="<%= @widget.order %>" />
+        </div>
         <button type="submit">Save</button>
     </form>
     <% if @widget.id %>

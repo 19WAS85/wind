@@ -3,7 +3,7 @@ require 'sinatra'
 require 'config'
 
 before do
-  @widgets = Widget.all
+  @widgets = Widget.filter.order(:order)
 end
 
 get '/' do
@@ -88,6 +88,7 @@ post '/widget' do
     widget = Widget[params[:id]] || Widget.new
     widget.title = params[:title]
     widget.content = params[:content]
+    widget.order = params[:order]
     widget.save
     go_home
   end
