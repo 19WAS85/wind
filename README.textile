@@ -8,6 +8,8 @@ HTML 5 is pretty, and Wind was developed with it. Ready for the future! Until 20
 
 Why simple? Because you don't need a extravaganza just to write. Or do you think that Bible was written with a powerfull word processor? Powerfull inspiration, ok, but with simple tools.
 
+Maybe you want to view a example: "http://wagnerandrade.com/":http://wagnerandrade.com/
+
 h3. 1 - Features
 
 Few features, but the engine is in constant development. Nevertheless, Wind dont want a lot of stuffs and tools, it's made to be simple.
@@ -45,8 +47,8 @@ Open your favorite browser, access:
 http://localhost:4567
 </pre>
 
-Ok... login, think and write!
-The default code to login is "admin".
+Ok... login (link on footer), think and write!
+The default admin code is "admin". D'oh!
 
 h3.  3 - Config & Settings
 
