@@ -9,7 +9,8 @@
             <textarea name="text" rows="20" cols="40" placeholder="Write here..."><%= @post.text %></textarea>
         </div>
         <p>Use <a href="http://redcloth.org/hobix.com/textile/">textile</a> to text formatting.</p>
-        <button type="submit">Save</button>
+        <button type="submit" name="action" value="preview">Preview</button>
+        <button type="submit" name="action" value="save">Save</button>
     </form>
     <% if @post.id %>
         <form id="delete" method="post" action="/post/<%= @post.id %>">
