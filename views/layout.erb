@@ -36,5 +36,10 @@
                 <% end %>
             </footer>
         </div>
+        <% unless logged? %>
+            <div id="tracker">
+                <%= $settings.tracker %>
+            </div>
+        <% end %>
     </body>
 </html>

@@ -7,6 +7,7 @@ class Setting < Sequel::Model
     varchar :code
     varchar :feed
     varchar :footer
+    varchar :tracker
   end
   
   unless table_exists?
