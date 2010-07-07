@@ -28,6 +28,12 @@
             <footer>
                 &copy;<%= today.year %> <%= $settings.name %>
                 &#8212; Powered by <a href="<%= wind_link %>">Wind</a>
+                &#8212;
+                <% if logged? %>
+                    <a href="/logout">Logout</a>
+                <% else %>
+                    <a href="/login">Login</a>
+                <% end %>
             </footer>
         </div>
     </body>

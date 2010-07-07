@@ -10,11 +10,6 @@
         </nav>
     </section>
 <% end %>
-<section id="feed">
-    <ul>
-        <li><a href="<%= feed_url %>">Feed</a></li>
-    </ul>
-</section>
 <section id="search">
     <form action="/search" method="get" accept-charset="utf-8">
         <input type="search" name="q" placeholder="Search" value="<%= params[:q] %>" />
@@ -29,13 +24,4 @@
             </div>
         </div>
     <% end %>
-</section>
-<section id="login">
-    <ul>
-        <% if logged? %>
-            <li><a href="/logout">Logout</a></li>
-        <% else %>
-            <li><a href="/login">Login</a></li>
-        <% end %>
-    </ul>
 </section>

@@ -66,8 +66,13 @@ post '/post' do
       post.date = Time.now
       post.link = to_link params[:title]
     end
-    post.save
-    go_home
+    if params[:action] == 'save'
+      post.save
+      go_home
+    elsif params[:action] == 'preview'
+      @posts = [] << post
+      erb :index
+    end
   end
 end
 

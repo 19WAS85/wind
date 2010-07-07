@@ -7,7 +7,14 @@ class Widget < Sequel::Model
     integer :order
   end
   
-  create_table?
+  unless table_exists?
+    create_table
+    create(
+      :title => 'Subscribe',
+      :content => '<ul id="feed"><li><a href="/feed">Feed</a></li></ul>',
+      :order => 10
+    )
+  end
   
   sync
   
