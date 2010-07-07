@@ -136,6 +136,7 @@ post '/settings' do
       $settings.code = params[:new_code] unless params[:new_code].empty?
       $settings.feed = params[:feed]
       $settings.footer = params[:footer]
+      $settings.tracker = params[:tracker]
       $settings.save
       go_home
     else
