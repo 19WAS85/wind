@@ -148,6 +148,7 @@ end
 
 get '/:link' do
   @posts = Post.with_link params[:link]
+  @title = @posts.first.title
   @footer = $settings.footer
   erb :index
 end

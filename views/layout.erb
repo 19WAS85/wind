@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title><%= $settings.name %> &#8212; <%= $settings.title %></title>
+        <title><%= $settings.name %> &#8212; <%= @title || $settings.title %></title>
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <meta name="Description" content="<%= $settings.title %>">
         <meta name="generator" content="Wind [<%= wind_link %>]" />
