@@ -27,3 +27,5 @@ $settings = Setting.from_database
 
 # Posts per page
 PAGE_SIZE = 10
+
+at_start_execution

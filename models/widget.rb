@@ -5,6 +5,7 @@ class Widget < Sequel::Model
     varchar :title
     varchar :content
     integer :order
+    boolean :admin
   end
   
   unless table_exists?
