@@ -1,6 +1,11 @@
 require 'sequel'
 require 'sequel/extensions/pagination'
 
+require 'lib/atstart.rb'
+require 'lib/datasync.rb'
+require 'lib/extend_string.rb'
+
+# Plugins.
 Dir['plugins/*.rb'].each { |plugin| require plugin }  
 
 # Database connection.
