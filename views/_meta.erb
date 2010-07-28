@@ -17,11 +17,13 @@
 </section>
 <section id="widgets">
     <% @widgets.each do |widget| %>
-        <div class="widget">
-            <h1><%= widget.title %><%= edit_link 'widget', widget.id %></h1>
-            <div class="content">
-                <%= widget.content %>
+        <% if not widget.admin or (logged? and widget.admin) %>
+            <div class="widget">
+                <h1><%= widget.title %><%= edit_link 'widget', widget.id %></h1>
+                <div class="content">
+                    <%= widget.content %>
+                </div>
             </div>
-        </div>
+        <% end %>
     <% end %>
 </section>
