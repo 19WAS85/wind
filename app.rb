@@ -30,6 +30,7 @@ get '/feed' do
 end
 
 get '/login' do
+  go_home if logged?
   erb :login
 end
 
