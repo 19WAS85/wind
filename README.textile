@@ -50,7 +50,13 @@ http://localhost:4567
 Ok... login (link on footer), think and write!
 The default admin code is "admin". D'oh!
 
-h3.  3 - Config & Settings
+h3. 3 - Config & Settings
 
 All (few) configurations can be made in config.rb file.
 Blog settings (name, code...) could be edited in settings page.
+
+h3. 4 - Themes
+
+Build a theme to wind is very easy. Just put a @style.css@ file and your resources (images, fonts...) on @public/custom@ directory.
+
+The theme of "wagnerandrade.com":http://wagnerandrade.com is "avabile here":http://github.com/wagnerandrade/wagnerandrade.com-theme.
