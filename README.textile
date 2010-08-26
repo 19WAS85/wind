@@ -60,3 +60,9 @@ h3. 4 - Themes
 Build a theme to wind is very easy. Just put a @style.css@ file and your resources (images, fonts...) on @public/custom@ directory.
 
 The theme of "wagnerandrade.com":http://wagnerandrade.com is "avabile here":http://github.com/wagnerandrade/wagnerandrade.com-theme.
+
+h3. 5 - Plugins
+
+* "Wordpress Importer":http://gist.github.com/494525
+
+* Wordpress Importer
