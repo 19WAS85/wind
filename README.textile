@@ -64,5 +64,3 @@ The theme of "wagnerandrade.com":http://wagnerandrade.com is "avabile here":http
 h3. 5 - Plugins
 
 * "Wordpress Importer":http://gist.github.com/494525
-
-* Wordpress Importer
