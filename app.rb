@@ -4,8 +4,6 @@ require './config/application'
 
 class WindApp < Sinatra::Base
   
-  enable :sessions
-  
   before do
     @widgets = Widget.filter.order(:order)
   end
