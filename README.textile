@@ -38,7 +38,7 @@ bundle install
 Ok, now is just run the server:
 
 <pre>
-ruby app.rb
+bundle exec unicorn
 </pre>
 
 Open your favorite browser, access:
