@@ -13,7 +13,8 @@ config = YAML.load_file("./config/config.yml")
 Dir['plugins/*.rb'].each { |plugin| require plugin }  
 
 # Database connection.
-DB = Sequel.connect config["database"]
+# Connect to env database (for heroku)
+DB = Sequel.connect(ENV['DATABASE_URL'] || config["database"])
 
 # Sequel schema plugin.
 Sequel::Model.plugin :schema
@@ -23,7 +24,7 @@ Dir['models/*.rb'].each { |model| require "./#{model}" }
 
 # Application helpers.
 helpers do
-  require './helpers'
+  require './lib/helpers'
 end
 
 # Blog configurations.
