@@ -1,9 +1,9 @@
 require 'sequel'
 require 'sequel/extensions/pagination'
 
-require 'lib/atstart.rb'
-require 'lib/datasync.rb'
-require 'lib/extend_string.rb'
+require './lib/atstart.rb'
+require './lib/datasync.rb'
+require './lib/extend_string.rb'
 
 # Plugins.
 Dir['plugins/*.rb'].each { |plugin| require plugin }  
@@ -15,7 +15,7 @@ DB = Sequel.connect 'sqlite://wind.db'
 Sequel::Model.plugin :schema
 
 # Database models.
-Dir['models/*.rb'].each { |model| require model }
+Dir['models/*.rb'].each { |model| require "./#{model}" }
 
 # Sinatra configurations.
 configure do
@@ -24,7 +24,7 @@ end
 
 # Application helpers.
 helpers do
-  require 'helpers'
+  require './helpers'
 end
 
 # Blog configurations.

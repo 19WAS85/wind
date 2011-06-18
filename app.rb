@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra'
-require 'config/config'
+require './config/config'
 
 class WindApp < Sinatra::Base
   before do
