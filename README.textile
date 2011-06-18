@@ -35,6 +35,12 @@ Download the source code and install the required gems (to sqlite database):
 bundle install
 </pre>
 
+<pre>
+cp config/config.yml.example config/config.yml
+</pre>
+
+Edit settings in config/config.yml
+
 Ok, now is just run the server:
 
 <pre>
@@ -44,18 +50,13 @@ bundle exec unicorn
 Open your favorite browser, access:
 
 <pre>
-http://localhost:4567
+http://localhost:8080
 </pre>
 
 Ok... login (link on footer), think and write!
 The default admin code is "admin". D'oh!
 
-h3. 3 - Config & Settings
-
-All (few) configurations can be made in config.rb file.
-Blog settings (name, code...) could be edited in settings page.
-
-h3. 4 - Themes
+h3. 3 - Themes
 
 Building a theme for wind is very easy. Just put a @style.css@ file and your resources (images, fonts...) in the @public/custom@ directory.
 
@@ -63,6 +64,6 @@ Some simple themes are available in "wind-themes":http://github.com/wagnerandrad
 
 Submit your theme!
 
-h3. 5 - Plugins
+h3. 4 - Plugins
 
 * "Wordpress Importer":http://gist.github.com/494525
