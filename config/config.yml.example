@@ -1,0 +1,2 @@
+database: sqlite://wind.db
+posts_per_page: 10
