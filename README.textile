@@ -35,10 +35,6 @@ Download the source code and install the required gems (to sqlite database):
 bundle install
 </pre>
 
-<pre>
-cp config/config.yml.example config/config.yml
-</pre>
-
 Edit settings in config/config.yml
 
 Ok, now is just run the server:
