@@ -2,17 +2,17 @@ Ladies and Gentlemen...
 
 h2. WIND: A simple way to think
 
-Wind is a blog engine. And it's simple, realy simple.
+Wind is a blog engine. And it's simple, really simple.
 
 HTML5 is pretty, and Wind was developed with it. Ready for the future! Until 2012, at least.
 
-Why simple? Because you don't need a extravaganza just to write. Or do you think that Bible was written with a powerfull word processor? Powerfull inspiration, ok, but with simple tools.
+Why simple? Because you don't need an extravaganza just to write. Do you think that Bible was written with a powerful word processor? Powerful inspiration, ok, but with simple tools.
 
 Maybe you want to view a example: "http://wagnerandrade.com/":http://wagnerandrade.com/
 
 h3. 1 - Features
 
-Few features, but the engine is in constant development. Nevertheless, Wind dont want a lot of stuffs and tools, it's made to be simple.
+Few features, but the engine is in constant development. Nevertheless, Wind doesn't want a lot of stuffs and tools, it's made to be simple.
 
 The basic features are:
     
@@ -20,7 +20,7 @@ The basic features are:
 * Feed RSS. Basic in a blog.
 * HTML widgets. To create menus, texts, twitter widget, flicker or what you has in your mind.
 * Textile text formatting. To do a easy, beauty and semantic text formatting.
-* Database-agnostic-independent-cool. You can use your prefered database.
+* Database-agnostic-independent-cool. You can use your preferred database.
 * We forgot a important feature? Suggest!
 
 New features, future features and suggest features:
@@ -32,13 +32,13 @@ h3. 2 - How it works?
 Download the source code and install the required gems (to sqlite database):
 
 <pre>
-sudo gem install sinatra sqlite3-ruby sequel RedCloth builder
+bundle install
 </pre>
 
 Ok, now is just run the server:
 
 <pre>
-ruby app.rb
+bundle exec unicorn
 </pre>
 
 Open your favorite browser, access:
@@ -57,7 +57,7 @@ Blog settings (name, code...) could be edited in settings page.
 
 h3. 4 - Themes
 
-Build a theme to wind is very easy. Just put a @style.css@ file and your resources (images, fonts...) on @public/custom@ directory.
+Building a theme for wind is very easy. Just put a @style.css@ file and your resources (images, fonts...) in the @public/custom@ directory.
 
 Some simple themes are available in "wind-themes":http://github.com/wagnerandrade/wind-themes repository.
 
