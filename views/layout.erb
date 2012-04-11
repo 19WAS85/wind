@@ -9,6 +9,9 @@
         <link rel="alternate" type="application/rss+xml" title="<%= $settings.name %> RSS Feed" href="<%= feed_url %>" />
         <link rel="index" title="<%= $settings.name %>" href="/" />
         <link rel="stylesheet" href="<%= style %>" type="text/css" media="screen" />
+        <script type="text/javascript" src="/jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="/modernizr-2.5.3.custom.js"></script>
+        <script type="text/javascript" src="/application.js"></script>
     </head>
     <body>
         <div id="content">
@@ -41,8 +44,5 @@
                 <%= $settings.tracker %>
             </div>
         <% end %>
-        <script type="text/javascript" src="/jquery-1.7.2.min.js"></script>
-        <script type="text/javascript" src="/modernizr-2.5.3.custom.js"></script>
-        <script type="text/javascript" src="/application.js"></script>
     </body>
 </html>
